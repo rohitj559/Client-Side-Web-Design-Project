@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!-- Making the website responsive -->
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Meta data for info on the website -->
+    <meta name="description" content="Hospitality Management">
+    <title>Hospitality Management Web Design</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/validation.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Hospitality Management <span class="highlight">Chicago</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <!--<li><a href="registration.html">SignUp</a></li>-->
+        			      <li><a href="signup.html">SignUp</a></li>
+                    <li class="current"><a href="login.html">Login</a></li>
+                    <li><a href="host_listing.html">Want to be a host?</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="login">
+        <div class="login_form">
+            <form action="login.html" name="login" method="post" enctype="multipart/form-data" onSubmit="return loginValidate();">
+                <table class="table_font">
+                    <tr>
+                        <td colspan="2">
+                            <span class="title">Login</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="email" class="text" id="login_email_address" name="login_email_address" placeholder="Email address">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="password" class="text" id="login_password" name="login_password" placeholder="Password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="align_right">
+                            <input type="submit" class="button_1" id="login_submit" name="reg_submit" value="Submit">
+                        </td>
+                    </tr>
+                    </table>
+                </form>
+                    <table class="table_font">
+                        <tr>
+                            <td colspan="2" class="column_height"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="member_text">Not a member yet? </span>
+                            </td>
+                            <td><a href="signup.html" class="link">Signup</a></td>
+                        </tr>
+                    </table>
+</div>
+    </section>
+
+    <footer>
+        <p>Hospitality Management Web Design, Copyright &copy; 2018</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- Making the website responsive -->
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Meta data for info on the website -->
+    <meta name="description" content="Hospitality Management">
+    <meta name="author" content="Komal Shivhare">
+    <title>Hospitality Management Web Design</title>
+    <link rel="stylesheet" href="css/style_komal.css">
+	  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	  <script>
+		$( function() {
+		$( "#CheckIn" ).datepicker();
+		$( "#CheckOut" ).datepicker();
+		} );
+	</script>
+	</head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1>Hospitality Management <span class="highlight">Chicago</span></h1>
+        </div>
+        <nav>
+          <ul>
+			      <!--li class="current"><a href="Logout.html">Logout</a></li-->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <!--<li><a href="registration.html">SignUp</a></li>-->
+			      <!--li><a href="signup.html">SignUp</a></li-->
+            <!--li><a href="login.html">Login</a></li-->
+            <li><a href="host_listing.html">Want to be a host?</a></li>
+            <li><a href="Logout.html">Log Out</a></li>
+            <!--li class="current"><a href="Guest_Home.html">Home</a></li-->
+          </ul>
+        </nav>
+      </div>
+    </header>
+      <div  class="container_menu">
+		<table cellpadding="10" style="width:500px">
+		<tr>
+			<td cellpadding="100"><font color="#e8491d" size="2" ><b>CheckIn:</b></font><input type="text" id="CheckIn" size="8"></td>
+			<td cellpadding="100"><font color="#e8491d" size="2" ><b>CheckOut:</b></font><input type="text" id="CheckOut" size="8"></td>
+			<td><button type="submit" class="button_1">Guests</button></td>
+			<td><button style="width:110px" type="submit" class="button_1">Home Type</button></td>
+			<td><button type="submit" class="button_1">Price</button></td>
+			<td><button style="width:120px" type="submit" class="button_1">More Filters</button></td>
+		</tr>
+		</table>
+      </div>
+	<section id="boxes">
+      <div class="container_menu">
+		<div class="box_room">
+			<a href="BookPlace.html"><img src="./images/bookroom1.jpg" alt="Room options" height="275"></a>
+			<p><b><font color="red">Single Room:</font> From <font color="red">$110</font> per Night Free Cancellation</b>
+			</p>
+		</div>
+		<div class="box_room">
+			<a href="BookPlace.html"><img src="./images/guestroom1.jpg" alt="Room options" height="275"></a>
+			<p><b><font color="red">Private Room:</font> From <font color="red">$300</font> per Night Free Cancellation</b>
+			</p>
+		</div>
+		<div class="box_room">
+			<a href="BookPlace.html"><img src="./images/guestroom3.jpg" alt="Room options" height="275"></a>
+			<p><b><font color="red">Apartment:</font> From <font color="red">$200</font> per Night Free Cancellation</b>
+			</p>
+		</div>
+		<div class="box_room">
+			<a href="BookPlace.html"><img src="./images/guestroom2.jpg" alt="Room options" height="275"></a>
+			<p><b><font color="red">Private room:</font> From <font color="red">$350</font> per Night Free Cancellation</b>
+			</p>
+		</div>
+	</div>
+	</section>
+    <footer>
+      <p>Hospitality Management Web Design, Copyright &copy; 2018</p>
+    </footer>
+  </body>
+</html>
